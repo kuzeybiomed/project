@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KuzeyBioMed — İletişim</title>
+  <link rel="icon" href="logo.jpeg">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/theme.js"></script>
+</head>
+<body>
+  <div id="site-header"></div>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <h1 data-i18n="contact.title">İletişim</h1>
+        <p class="crumb" data-i18n="contact.crumb">Ana Sayfa / İletişim</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container contact-grid">
+        <div>
+          <h2 style="margin-bottom:1.5rem" data-i18n="contact.info_title">Bize Ulaşın</h2>
+          <ul class="contact-info">
+            <li><div class="card-icon">📍</div><div><strong data-i18n="contact.addr_t">Adres</strong><span data-i18n="contact.addr_d"></span></div></li>
+            <li><div class="card-icon">📞</div><div><strong data-i18n="contact.phone_t">Telefon</strong><span data-i18n="contact.phone_d"></span></div></li>
+            <li><div class="card-icon">✉️</div><div><strong data-i18n="contact.email_t">E-posta</strong><span data-i18n="contact.email_d"></span></div></li>
+          </ul>
+        </div>
+
+        <form onsubmit="event.preventDefault(); this.reset();">
+          <div class="form-field">
+            <label data-i18n="contact.form_name">Ad Soyad</label>
+            <input type="text" name="name" required>
+          </div>
+          <div class="form-field">
+            <label data-i18n="contact.form_email">E-posta</label>
+            <input type="email" name="email" required>
+          </div>
+          <div class="form-field">
+            <label data-i18n="contact.form_subject">Konu</label>
+            <input type="text" name="subject">
+          </div>
+          <div class="form-field">
+            <label data-i18n="contact.form_message">Mesajınız</label>
+            <textarea name="message" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary" data-i18n="contact.form_send">Gönder</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
